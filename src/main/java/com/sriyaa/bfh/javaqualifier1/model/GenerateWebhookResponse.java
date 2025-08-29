@@ -1,12 +1,9 @@
 package com.sriyaa.bfh.javaqualifier1.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter @Setter
 public class GenerateWebhookResponse {
     private String webhook;
     private String accessToken;

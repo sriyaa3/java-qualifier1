@@ -1,12 +1,15 @@
 package com.sriyaa.bfh.javaqualifier1.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter @Setter
 public class FinalQueryRequest {
-    private String query;
+    private String finalQuery;
+
+    public FinalQueryRequest() {}
+
+    public FinalQueryRequest(String finalQuery) {
+        this.finalQuery = finalQuery;
+    }
 }
